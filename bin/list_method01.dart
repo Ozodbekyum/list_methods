@@ -7,5 +7,11 @@
     Returns:
         list: return answer
 */
+List func(List<String> frut, String s) {
+  frut.add(s);
+  return frut;
+}
 
-void main() {}
+void main() {
+  print(func(['olma', 'banan'], 'dovcha'));
+}
