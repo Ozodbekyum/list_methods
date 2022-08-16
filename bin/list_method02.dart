@@ -8,5 +8,11 @@
     Returns:
         list: return answer 
 */
+List func(List frut, String x, int i) {
+  frut.insert(i, x);
+  return frut;
+}
 
-void main() {}
+void main() {
+  print(func(['uzum', 'anjir'], 'gilos', 1));
+}
