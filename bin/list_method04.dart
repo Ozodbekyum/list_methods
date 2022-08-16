@@ -8,10 +8,11 @@
         list: return answer
 */
 List func(List n, int i) {
+  List b = [n[i]];
   n.remove(i);
-  return n;
+  return b;
 }
 
 void main() {
-  print(func([1, 2, 3, 4, 5, 6], 1));
+  print(func([1, 2, 3, 4, 5, 6], 3));
 }
