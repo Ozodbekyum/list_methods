@@ -7,8 +7,8 @@
     Returns:
         list: return answer
 */
-List func(List n, int i) {
-  List b = [n[i]];
+int func(List n, int i) {
+  int b = n[i];
   n.remove(i);
   return b;
 }
