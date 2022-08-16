@@ -10,12 +10,12 @@
         list: return answer
 */
 List func(List n1, List n2) {
-  int x = n1.length;
-  n2.insert(0, x);
-  n1.remove(x);
+  int x = n1.length - 1;
+  n2.insert(0, n1[x]);
+  n1.remove(n1[x]);
   return n1 + n2;
 }
 
 void main() {
-  print(func([1, 2, 3], [4, 5, 6]));
+  print(func([97, 58, 25], [12, 63, 4]));
 }
