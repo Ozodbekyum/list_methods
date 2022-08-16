@@ -6,5 +6,19 @@
     Returns:
         int: return answer
 */
+int func(List list1) {
+  int x = 0;
+  int w = 0;
+  int b = list1.length;
+  while (b > x) {
+    if (list1[x] == 0) {
+      w++;
+    }
+    x++;
+  }
+  return w;
+}
 
-void main() {}
+void main() {
+  print(func([0, 0, 1, 0, 1]));
+}
