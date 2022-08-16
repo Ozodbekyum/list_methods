@@ -7,5 +7,11 @@
     Returns:
         list: return answer
 */
+List func(List n, int i) {
+  n.remove(i);
+  return n;
+}
 
-void main() {}
+void main() {
+  print(func([1, 2, 3, 4, 5, 6], 4));
+}
